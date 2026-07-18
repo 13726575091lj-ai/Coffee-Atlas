@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Coffee Atlas：探索来自世界各地的咖啡豆、风味与冲煮建议。"
+    />
+    <title>Coffee Atlas · 咖啡豆图鉴</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif+SC:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Coffee Atlas 首页">
+        <span class="brand-mark">◒</span>
+        <span>Coffee Atlas</span>
+        <small>ORIGIN · FLAVOUR · RITUAL</small>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#beans">咖啡图鉴</a>
+        <a href="#guide">选豆指南</a>
+        <a href="#about">关于产地</a>
+      </nav>
+      <a class="header-action" href="#beans">探索豆单 <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span>从一杯咖啡，认识世界</p>
+          <h1 id="hero-title">每一颗豆子<br />都有它的<span>来处</span>。</h1>
+          <p class="hero-description">
+            海拔、土壤、品种与处理法，共同写成一杯咖啡的味道。循着香气，开启你的产地之旅。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#beans">开始探索 <span>↓</span></a>
+            <a class="text-link" href="#guide">不知道怎么选？<span>→</span></a>
+          </div>
+          <div class="hero-note">
+            <strong>12° N — 25° S</strong>
+            <span>咖啡带 · 地球上的风味纬度</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="一杯手冲咖啡与咖啡果插画">
+          <div class="sun"></div>
+          <div class="bean bean-one"></div>
+          <div class="bean bean-two"></div>
+          <div class="leaf leaf-one"></div>
+          <div class="leaf leaf-two"></div>
+          <div class="coffee-cup"><div class="coffee-surface"></div></div>
+          <p class="art-label label-top">SEASONAL<br /><i>ORIGINS</i></p>
+          <p class="art-label label-bottom">ROASTED<br />WITH CARE</p>
+          <span class="origin-stamp">ORIGIN<br /><b>07</b></span>
+        </div>
+      </section>
+
+      <section class="intro-strip" id="about" aria-label="咖啡产地介绍">
+        <p>一颗咖啡豆的风味，是自然与人的共同作品。</p>
+        <div><span>08</span> 个代表性产地 <i></i> <span>04</span> 大风味方向</div>
+      </section>
+
+      <section class="bean-section" id="beans" aria-labelledby="beans-title">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span></span>COFFEE ORIGINS</p>
+            <h2 id="beans-title">找到你的那一杯</h2>
+          </div>
+          <p class="section-summary">按产地、风味或冲煮方式，<br />探索适合此刻的咖啡。</p>
+        </div>
+
+        <div class="toolbar" data-reveal>
+          <div class="filters" aria-label="按国家筛选">
+            <button class="filter active" data-country="all">全部产地</button>
+            <button class="filter" data-country="埃塞俄比亚">埃塞俄比亚</button>
+            <button class="filter" data-country="哥伦比亚">哥伦比亚</button>
+            <button class="filter" data-country="巴拿马">巴拿马</button>
+            <button class="filter" data-country="其他">更多产地</button>
+          </div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="搜索咖啡豆、风味…" aria-label="搜索咖啡豆" />
+          </label>
+        </div>
+
+        <div class="bean-grid" id="bean-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>没有找到相符的咖啡豆，换个关键词试试。</p>
+      </section>
+
+      <section class="guide-section" id="guide" aria-labelledby="guide-title">
+        <div class="guide-intro" data-reveal>
+          <p class="eyebrow light"><span></span>THE FLAVOUR COMPASS</p>
+          <h2 id="guide-title">让风味，<br />为你指路。</h2>
+          <p>不用记住复杂术语。从你喜欢的味道开始，找到下一包想喝的豆子。</p>
+          <a class="button button-light" href="#beans">去挑一包 <span>→</span></a>
+        </div>
+        <div class="flavour-compass" data-reveal>
+          <div class="compass-circle outer"></div>
+          <div class="compass-circle middle"></div>
+          <div class="compass-center">你的<br /><em>风味</em></div>
+          <button class="compass-point point-top" data-taste="茉莉">✦<span>花香果汁感</span></button>
+          <button class="compass-point point-right" data-taste="坚果">✦<span>坚果焦糖感</span></button>
+          <button class="compass-point point-bottom" data-taste="可可">✦<span>可可醇厚感</span></button>
+          <button class="compass-point point-left" data-taste="橙子">✦<span>柑橘明亮感</span></button>
+        </div>
+      </section>
+
+      <section class="brew-section" aria-labelledby="brew-title">
+        <p class="eyebrow"><span></span>BREWING NOTE</p>
+        <div class="brew-content" data-reveal>
+          <h2 id="brew-title">好豆子，也需要<br />合适的相遇方式。</h2>
+          <div class="brew-list">
+            <article><span>01</span><h3>手冲</h3><p>明亮、干净，最适合感受产地的细腻香气。</p></article>
+            <article><span>02</span><h3>意式</h3><p>浓郁、甜感突出，坚果与可可调性更迷人。</p></article>
+            <article><span>03</span><h3>冷萃</h3><p>圆润、低酸，以柔和口感迎接漫长的午后。</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top"><span class="brand-mark">◒</span><span>Coffee Atlas</span><small>ORIGIN · FLAVOUR · RITUAL</small></a>
+      <p>让每一杯咖啡，都有迹可循。</p>
+      <a href="#top">回到顶部 ↑</a>
+    </footer>
+
+    <dialog class="bean-dialog" id="bean-dialog" aria-labelledby="dialog-title">
+      <button class="close-dialog" aria-label="关闭详情">×</button>
+      <div class="dialog-visual" id="dialog-visual"></div>
+      <div class="dialog-copy">
+        <p class="eyebrow"><span></span><span id="dialog-country"></span></p>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-description"></p>
+        <dl id="dialog-details"></dl>
+        <p class="dialog-tip" id="dialog-tip"></p>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
